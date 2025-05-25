@@ -15,7 +15,7 @@ Globals:
       LogFormat: JSON
 
 Conditions:
-  IsProduction: !Equals [!Ref AWS::StackName, !Ref AWS::StackName]
+  IsProduction: !Equals [!Ref "AWS::StackName", "workshop-sam-app-prod"]
 
 Resources:
   HelloWorldFunction:
