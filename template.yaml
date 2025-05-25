@@ -50,7 +50,7 @@ Resources:
       Threshold: 0
       Dimensions:
         - Name: Resource
-          Value: !Sub ${HelloWorldFunction}:live
+          Value: !Sub "${HelloWorldFunction}:live"
         - Name: FunctionName
           Value: !Ref HelloWorldFunction
         - Name: ExecutedVersion
