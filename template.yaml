@@ -52,7 +52,7 @@ Resources:
         - Name: Resource
           Value: !Sub ${HelloWorldFunction}.Arn
         - Name: FunctionName
-          Value !Ref HelloWorldFunction
+          Value: !Ref HelloWorldFunction
         - Name: ExecutedVersion
           Value: !GetAtt HelloWorldFunction.Version.Version
 
